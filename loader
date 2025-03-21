@@ -1,0 +1,14 @@
+local games = {
+    [14236123211] = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/14236123211.lua"
+}
+
+local gameId = game.PlaceId
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(gameId).Name
+local url = games[gameId]
+
+if url then
+    print("PetrixHub - " .. gameName .. " Loaded!")
+    loadstring(game:HttpGet(url, true))()
+else
+    print("PetrixHub not support for " .. gameName)
+end
