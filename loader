@@ -1,5 +1,6 @@
 local games = {
-    [14236123211] = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/14236123211.lua"
+    [14236123211] = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/14236123211.lua",
+    [121864768012064] = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/121864768012064.lua"
 }
 
 local gameId = game.PlaceId
