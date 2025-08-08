@@ -1,4 +1,4 @@
-# PetrixHub
+# PETRIX-HUB
 
 Game Support:
 - [FREE UGC] Punch Simulator 👊
