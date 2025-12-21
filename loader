@@ -1,5 +1,7 @@
+local baselink = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/"
+
 local games = {
-    [84988808589910] = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/14236123211.lua"
+    [84988808589910] = baselink.."84988808589910.lua"
 }
 
 local gameId = game.PlaceId
