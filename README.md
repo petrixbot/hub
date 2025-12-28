@@ -2,7 +2,7 @@
 **Petrix Hub** is a Roblox exploit script provider designed to enhance gameplay with powerful and easy-to-use features.
 
 ## 🎮 Supported Games
-- ⚠️ [Fish It](https://www.roblox.com/games/121864768012064/Fish-It) (Move to [FFS HUB](https://discord.gg/ffshub))
+- ❌ [Fish It](https://www.roblox.com/games/121864768012064/Fish-It) (Move to [FFS HUB](https://discord.gg/ffshub))
 - ❌ [Punch Simulator 👊](https://www.roblox.com/games/14236123211/Punch-Simulator) (**Outdated / Removed**)
 - ✅ [Rogue Piece](https://www.roblox.com/games/84988808589910/Rogue-Piece)
 
