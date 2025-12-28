@@ -1,16 +1,21 @@
-local baselink = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/"
-
-local games = {
-    [84988808589910] = baselink.."84988808589910.lua"
-}
-
+-- PetrixHub Game Loader
 local gameId = game.PlaceId
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(gameId).Name
-local url = games[gameId]
+local baseUrl = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/"
 
-if url then
-    print("✅ PetrixHub - " .. gameName .. " Loaded!")
-    loadstring(game:HttpGet(url, true))()
+-- Supported Games Map
+local supportedGames = {
+    [84988808589910] = "84988808589910.lua", -- Rogue Piece (Main Map)
+    [96105075537655] = "84988808589910.lua", -- Rogue Piece (Dungeon Map)
+}
+
+-- Load Script
+local scriptPath = supportedGames[gameId]
+
+if scriptPath then
+    local scriptUrl = baseUrl .. scriptPath
+    print("✅ PetrixHub support " .. gameName")
+    loadstring(game:HttpGet(scriptUrl, true))()
 else
-    warn("⚠️ PetrixHub not support for " .. gameName)
+    warn("⚠️ PetrixHub does not support " .. gameName)
 end
