@@ -1,7 +1,7 @@
 -- PetrixHub Game Loader
 local gameId = game.PlaceId
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(gameId).Name
-local baseUrl = "https://raw.githubusercontent.com/petrixbot/hub/refs/heads/main/game/"
+local baseUrl = "https://raw.githubusercontent.com/petrixbot/roblox-hub/refs/heads/main/game/"
 
 -- Supported Games Map
 local supportedGames = {
@@ -14,8 +14,8 @@ local scriptPath = supportedGames[gameId]
 
 if scriptPath then
     local scriptUrl = baseUrl .. scriptPath
-    print("✅ PetrixHub support " .. gameName)
+    print("✅ PetrixHub support ", gameName)
     loadstring(game:HttpGet(scriptUrl, true))()
 else
-    warn("⚠️ PetrixHub does not support " .. gameName)
+    warn("⚠️ PetrixHub does not support ", gameName)
 end
